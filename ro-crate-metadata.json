@@ -1,0 +1,1054 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "SciQuery: an expert-validated NL-to-SQL benchmark over scientific datasets",
+      "description": "Expert-validated natural-language to PostgreSQL benchmark over 30 Dryad scientific datasets, with a paper-disjoint train/test split. Contains 673 gold items (520 train / 153 test) drawn from a 707-item candidate pool, with gold SQL, recorded answers, per-database schema metadata, and source provenance. Raw Dryad data are not redistributed; reconstruct databases from the original records listed in metadata/dryad_manifest.jsonl.",
+      "datePublished": "2026-06-07",
+      "identifier": "https://doi.org/10.5281/zenodo.20580183",
+      "url": "https://doi.org/10.5281/zenodo.20580183",
+      "license": [
+        {
+          "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "@id": "https://spdx.org/licenses/MIT.html"
+        }
+      ],
+      "author": {
+        "@id": "#hadi-ghaemi"
+      },
+      "publisher": {
+        "@id": "#hadi-ghaemi"
+      },
+      "keywords": [
+        "Agricultural sciences",
+        "Agriculture, forestry, and fisheries",
+        "Biological sciences",
+        "Earth and related environmental sciences",
+        "Health sciences",
+        "NL2SQL",
+        "Natural sciences",
+        "PostgreSQL",
+        "benchmark",
+        "reproducibility",
+        "scientific data",
+        "text-to-SQL"
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.5061/dryad.1vhhmgr3m"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.2rbnzs83c"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.5qfttdzh7"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.5tb2rbphd"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.6hdr7sr92"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.6hdr7srck"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.6t1g1jx88"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.73n5tb38b"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.7h44j104q"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.83bk3jb62"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.9p8cz8wsr"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.brv15dvkg"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.c2fqz61h2"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.d7wm37qc3"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.fbg79cp75"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.ffbg79d3x"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.jsxksn0ns"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.k3j9kd5mm"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.k3j9kd5ng"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.k98sf7mmj"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.kh18932mr"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.ksn02v7gj"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.mcvdnck87"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.pnvx0k709"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.tb2rbp0c7"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.v6wwpzh88"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.vx0k6dk2z"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.wpzgmsc06"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.wpzgmsc28"
+        },
+        {
+          "@id": "https://doi.org/10.5061/dryad.xksn02vs8"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": ".github/workflows/ci.yml"
+        },
+        {
+          "@id": "benchmark/candidate_pool.jsonl"
+        },
+        {
+          "@id": "benchmark/gold_items.jsonl"
+        },
+        {
+          "@id": "benchmark/item_schema.md"
+        },
+        {
+          "@id": "benchmark/test_pool.jsonl"
+        },
+        {
+          "@id": "benchmark/train_pool.jsonl"
+        },
+        {
+          "@id": "evaluation/eval_results.csv"
+        },
+        {
+          "@id": "evaluation/gold_eval.jsonl"
+        },
+        {
+          "@id": "LICENSE"
+        },
+        {
+          "@id": "metadata/dryad_manifest.jsonl"
+        },
+        {
+          "@id": "predictions/claude-sonnet-4-5__FS-RAG-Doc.jsonl"
+        },
+        {
+          "@id": "predictions/claude-sonnet-4-5__FS-Random-Doc__s42.jsonl"
+        },
+        {
+          "@id": "predictions/claude-sonnet-4-5__ZS-Bare.jsonl"
+        },
+        {
+          "@id": "predictions/claude-sonnet-4-5__ZS-Doc.jsonl"
+        },
+        {
+          "@id": "predictions/gemini-2.5-flash__FS-RAG-Doc.jsonl"
+        },
+        {
+          "@id": "predictions/gemini-2.5-flash__FS-Random-Doc__s42.jsonl"
+        },
+        {
+          "@id": "predictions/gemini-2.5-flash__ZS-Bare.jsonl"
+        },
+        {
+          "@id": "predictions/gemini-2.5-flash__ZS-Doc.jsonl"
+        },
+        {
+          "@id": "predictions/gpt-4o__FS-RAG-Doc.jsonl"
+        },
+        {
+          "@id": "predictions/gpt-4o__FS-Random-Doc__s42.jsonl"
+        },
+        {
+          "@id": "predictions/gpt-4o__ZS-Bare.jsonl"
+        },
+        {
+          "@id": "predictions/gpt-4o__ZS-Doc.jsonl"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "sql/execution_report.json"
+        },
+        {
+          "@id": "sql/gold_answers.jsonl"
+        },
+        {
+          "@id": "sql/gold_sql.jsonl"
+        },
+        {
+          "@id": "sql/schema_field_flags.csv"
+        },
+        {
+          "@id": "sql/schema_metadata.jsonl"
+        },
+        {
+          "@id": "tests/test_bundle_integrity.py"
+        }
+      ]
+    },
+    {
+      "@id": "#hadi-ghaemi",
+      "@type": "Person",
+      "name": "Hadi Ghaemi",
+      "email": "hadi.qaemi@gmail.com"
+    },
+    {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "@type": "CreativeWork",
+      "name": "CC0 1.0 Universal (CC0 1.0)",
+      "description": "Public-domain dedication applied to the underlying Dryad source data."
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT.html",
+      "@type": "CreativeWork",
+      "name": "MIT License",
+      "description": "Applies to the benchmark curation and code in this repository (see LICENSE)."
+    },
+    {
+      "@id": "https://doi.org/10.1139/cjfas-2024-0280",
+      "@type": "ScholarlyArticle",
+      "name": "Analyzing recreational fishing effort – Gender differences and the impact of Covid-19",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.1vhhmgr3m",
+      "@type": "Dataset",
+      "name": "Analyzing recreational fishing effort – Gender differences and the impact of Covid-19",
+      "identifier": "10.5061/dryad.1vhhmgr3m",
+      "url": "https://doi.org/10.5061/dryad.1vhhmgr3m",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Agriculture, forestry, and fisheries",
+      "citation": {
+        "@id": "https://doi.org/10.1139/cjfas-2024-0280"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1098/rspb.2025.1721",
+      "@type": "ScholarlyArticle",
+      "name": "Chemical properties of foliar metabolomes represent a key axis of functional trait variation in forests of the tropical Andes",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.2rbnzs83c",
+      "@type": "Dataset",
+      "name": "Chemical properties of foliar metabolomes represent a key axis of functional trait variation in forests of the tropical Andes",
+      "identifier": "10.5061/dryad.2rbnzs83c",
+      "url": "https://doi.org/10.5061/dryad.2rbnzs83c",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Earth and related environmental sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1098/rspb.2025.1721"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1098/rsos.242208",
+      "@type": "ScholarlyArticle",
+      "name": "Effects of summer weather and heatwaves on wild boar activity",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.5qfttdzh7",
+      "@type": "Dataset",
+      "name": "Effects of summer weather and heatwaves on wild boar activity",
+      "identifier": "10.5061/dryad.5qfttdzh7",
+      "url": "https://doi.org/10.5061/dryad.5qfttdzh7",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1098/rsos.242208"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1093/evolut/qpaf209",
+      "@type": "ScholarlyArticle",
+      "name": "Tetrapod vocal evolution reveals faster rates and higher-pitched sounds for mammals",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.5tb2rbphd",
+      "@type": "Dataset",
+      "name": "Tetrapod vocal evolution reveals faster rates and higher-pitched sounds for mammals",
+      "identifier": "10.5061/dryad.5tb2rbphd",
+      "url": "https://doi.org/10.5061/dryad.5tb2rbphd",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1093/evolut/qpaf209"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/ece3.70716",
+      "@type": "ScholarlyArticle",
+      "name": "Cryptic hybridization dynamics in a three-way hybrid zone of Dinopium flamebacks on a tropical island",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.6hdr7sr92",
+      "@type": "Dataset",
+      "name": "Cryptic hybridization dynamics in a three-way hybrid zone of Dinopium flamebacks on a tropical island",
+      "identifier": "10.5061/dryad.6hdr7sr92",
+      "url": "https://doi.org/10.5061/dryad.6hdr7sr92",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/ece3.70716"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1098/rsos.250664",
+      "@type": "ScholarlyArticle",
+      "name": "Shell dissolution rates differ fourfold between mussel species",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.6hdr7srck",
+      "@type": "Dataset",
+      "name": "Shell dissolution rates differ fourfold between mussel species",
+      "identifier": "10.5061/dryad.6hdr7srck",
+      "url": "https://doi.org/10.5061/dryad.6hdr7srck",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Earth and related environmental sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1098/rsos.250664"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1126/sciadv.adu6611",
+      "@type": "ScholarlyArticle",
+      "name": "Biocultural vulnerability of traditional crops in the Indian Trans Himalaya",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.6t1g1jx88",
+      "@type": "Dataset",
+      "name": "Biocultural vulnerability of traditional crops in the Indian Trans Himalaya",
+      "identifier": "10.5061/dryad.6t1g1jx88",
+      "url": "https://doi.org/10.5061/dryad.6t1g1jx88",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Agricultural sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1126/sciadv.adu6611"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1093/chemse/bjaf021",
+      "@type": "ScholarlyArticle",
+      "name": "A deep learning and digital archaeology approach for mosquito repellent discovery",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.73n5tb38b",
+      "@type": "Dataset",
+      "name": "A deep learning and digital archaeology approach for mosquito repellent discovery",
+      "identifier": "10.5061/dryad.73n5tb38b",
+      "url": "https://doi.org/10.5061/dryad.73n5tb38b",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1093/chemse/bjaf021"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/ece3.71505",
+      "@type": "ScholarlyArticle",
+      "name": "Experimental manipulation of polyandry in a marine gastropod reveals how the number of mates affects reproductive output, offspring size, and the distribution of paternity within broods",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.7h44j104q",
+      "@type": "Dataset",
+      "name": "Experimental manipulation of polyandry in a marine gastropod reveals how the number of mates affects reproductive output, offspring size, and the distribution of paternity within broods",
+      "identifier": "10.5061/dryad.7h44j104q",
+      "url": "https://doi.org/10.5061/dryad.7h44j104q",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/ece3.71505"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1093/beheco/araf133",
+      "@type": "ScholarlyArticle",
+      "name": "Collective self-assessment in banded mongoose intergroup contests",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.83bk3jb62",
+      "@type": "Dataset",
+      "name": "Collective self-assessment in banded mongoose intergroup contests",
+      "identifier": "10.5061/dryad.83bk3jb62",
+      "url": "https://doi.org/10.5061/dryad.83bk3jb62",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1093/beheco/araf133"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1136/bmjph-2024-002436",
+      "@type": "ScholarlyArticle",
+      "name": "Breakthrough SARS-CoV-2 outcomes in immune-disordered people during the Omicron era: A prospective cohort study",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.9p8cz8wsr",
+      "@type": "Dataset",
+      "name": "Breakthrough SARS-CoV-2 outcomes in immune-disordered people during the Omicron era: A prospective cohort study",
+      "identifier": "10.5061/dryad.9p8cz8wsr",
+      "url": "https://doi.org/10.5061/dryad.9p8cz8wsr",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Health sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1136/bmjph-2024-002436"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/ecy.70307",
+      "@type": "ScholarlyArticle",
+      "name": "<em>Aedes sierrensis</em> - <em>Lambornella clarki</em> host - parasite interaction data: Field survey and temperature dependence laboratory experiments",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.brv15dvkg",
+      "@type": "Dataset",
+      "name": "<em>Aedes sierrensis</em> - <em>Lambornella clarki</em> host - parasite interaction data: Field survey and temperature dependence laboratory experiments",
+      "identifier": "10.5061/dryad.brv15dvkg",
+      "url": "https://doi.org/10.5061/dryad.brv15dvkg",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/ecy.70307"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cris.2024.100074",
+      "@type": "ScholarlyArticle",
+      "name": "Reproductive biology of Hawaiian lava crickets",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.c2fqz61h2",
+      "@type": "Dataset",
+      "name": "Reproductive biology of Hawaiian lava crickets",
+      "identifier": "10.5061/dryad.c2fqz61h2",
+      "url": "https://doi.org/10.5061/dryad.c2fqz61h2",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1016/j.cris.2024.100074"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1093/jeb/voaf041",
+      "@type": "ScholarlyArticle",
+      "name": "A single episode of sexual reproduction can produce large variation in population growth rates under dual stressors",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.d7wm37qc3",
+      "@type": "Dataset",
+      "name": "A single episode of sexual reproduction can produce large variation in population growth rates under dual stressors",
+      "identifier": "10.5061/dryad.d7wm37qc3",
+      "url": "https://doi.org/10.5061/dryad.d7wm37qc3",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Earth and related environmental sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1093/jeb/voaf041"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/ece3.72402",
+      "@type": "ScholarlyArticle",
+      "name": "Data for: Island syndrome in the critically endangered Lord Howe Island cockroach <em>Panesthia lata</em>",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.fbg79cp75",
+      "@type": "Dataset",
+      "name": "Data for: Island syndrome in the critically endangered Lord Howe Island cockroach <em>Panesthia lata</em>",
+      "identifier": "10.5061/dryad.fbg79cp75",
+      "url": "https://doi.org/10.5061/dryad.fbg79cp75",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/ece3.72402"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1098/rsos.251528",
+      "@type": "ScholarlyArticle",
+      "name": "<em>Astrangia poculata</em> heat stress pH response",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.ffbg79d3x",
+      "@type": "Dataset",
+      "name": "<em>Astrangia poculata</em> heat stress pH response",
+      "identifier": "10.5061/dryad.ffbg79d3x",
+      "url": "https://doi.org/10.5061/dryad.ffbg79d3x",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1098/rsos.251528"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1111/mec.70070",
+      "@type": "ScholarlyArticle",
+      "name": "Bumble bees and honey bees on islands harbour reduced viral species richness, yet honey bee populations are dominated by a deformed wing virus recombinant",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.jsxksn0ns",
+      "@type": "Dataset",
+      "name": "Bumble bees and honey bees on islands harbour reduced viral species richness, yet honey bee populations are dominated by a deformed wing virus recombinant",
+      "identifier": "10.5061/dryad.jsxksn0ns",
+      "url": "https://doi.org/10.5061/dryad.jsxksn0ns",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1111/mec.70070"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1111/1365-2435.70242",
+      "@type": "ScholarlyArticle",
+      "name": "Evolutionary constraints in host shifts: limited adaptation of <em>Plutella xylostella</em> to cardenolide-defended <em>Erysimum cheiranthoides</em>",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.k3j9kd5mm",
+      "@type": "Dataset",
+      "name": "Evolutionary constraints in host shifts: limited adaptation of <em>Plutella xylostella</em> to cardenolide-defended <em>Erysimum cheiranthoides</em>",
+      "identifier": "10.5061/dryad.k3j9kd5mm",
+      "url": "https://doi.org/10.5061/dryad.k3j9kd5mm",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1111/1365-2435.70242"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1111/gcb.70551",
+      "@type": "ScholarlyArticle",
+      "name": "A scoping review of mosquito vector range shifts: widespread expansions and evidence gaps in climate attribution",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.k3j9kd5ng",
+      "@type": "Dataset",
+      "name": "A scoping review of mosquito vector range shifts: widespread expansions and evidence gaps in climate attribution",
+      "identifier": "10.5061/dryad.k3j9kd5ng",
+      "url": "https://doi.org/10.5061/dryad.k3j9kd5ng",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1111/gcb.70551"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1093/beheco/araf157",
+      "@type": "ScholarlyArticle",
+      "name": "Body condition and acoustic noise modify female responses to uni- and multimodal signals emitted by a male-mimicking robot frog",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.k98sf7mmj",
+      "@type": "Dataset",
+      "name": "Body condition and acoustic noise modify female responses to uni- and multimodal signals emitted by a male-mimicking robot frog",
+      "identifier": "10.5061/dryad.k98sf7mmj",
+      "url": "https://doi.org/10.5061/dryad.k98sf7mmj",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1093/beheco/araf157"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1093/evolut/qpaf199",
+      "@type": "ScholarlyArticle",
+      "name": "Habitat complexity alters the strength of sexual selection on female brain size in a livebearing fish",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.kh18932mr",
+      "@type": "Dataset",
+      "name": "Habitat complexity alters the strength of sexual selection on female brain size in a livebearing fish",
+      "identifier": "10.5061/dryad.kh18932mr",
+      "url": "https://doi.org/10.5061/dryad.kh18932mr",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Natural sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1093/evolut/qpaf199"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1111/nyas.15395",
+      "@type": "ScholarlyArticle",
+      "name": "Diverse hosts, diverse immune systems: evolutionary variation in bat immunology",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.ksn02v7gj",
+      "@type": "Dataset",
+      "name": "Diverse hosts, diverse immune systems: evolutionary variation in bat immunology",
+      "identifier": "10.5061/dryad.ksn02v7gj",
+      "url": "https://doi.org/10.5061/dryad.ksn02v7gj",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1111/nyas.15395"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/ece3.70724",
+      "@type": "ScholarlyArticle",
+      "name": "Sex and age differences in habitat selection of the mountain dragon lizard (<em>Diploderma splendidum</em>) from Western China",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.mcvdnck87",
+      "@type": "Dataset",
+      "name": "Sex and age differences in habitat selection of the mountain dragon lizard (<em>Diploderma splendidum</em>) from Western China",
+      "identifier": "10.5061/dryad.mcvdnck87",
+      "url": "https://doi.org/10.5061/dryad.mcvdnck87",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/ece3.70724"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1111/ele.70105",
+      "@type": "ScholarlyArticle",
+      "name": "Data and code from: How do synchrony in survival and productivity influence abundance synchrony in European landbirds?",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.pnvx0k709",
+      "@type": "Dataset",
+      "name": "Data and code from: How do synchrony in survival and productivity influence abundance synchrony in European landbirds?",
+      "identifier": "10.5061/dryad.pnvx0k709",
+      "url": "https://doi.org/10.5061/dryad.pnvx0k709",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1111/ele.70105"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1098/rspb.2025.1750",
+      "@type": "ScholarlyArticle",
+      "name": "Large carnivore feeding is resilient to human disturbance",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.tb2rbp0c7",
+      "@type": "Dataset",
+      "name": "Large carnivore feeding is resilient to human disturbance",
+      "identifier": "10.5061/dryad.tb2rbp0c7",
+      "url": "https://doi.org/10.5061/dryad.tb2rbp0c7",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1098/rspb.2025.1750"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/oik.11921",
+      "@type": "ScholarlyArticle",
+      "name": "Data and code from: Is a plant truly plastic? Nutrients and neighbours induce trait-specific responses, but performance depends on response direction",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.v6wwpzh88",
+      "@type": "Dataset",
+      "name": "Data and code from: Is a plant truly plastic? Nutrients and neighbours induce trait-specific responses, but performance depends on response direction",
+      "identifier": "10.5061/dryad.v6wwpzh88",
+      "url": "https://doi.org/10.5061/dryad.v6wwpzh88",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Natural sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/oik.11921"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41437-025-00801-w",
+      "@type": "ScholarlyArticle",
+      "name": "Data and code from: Parasite-mediated inbreeding depression in wild red deer",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.vx0k6dk2z",
+      "@type": "Dataset",
+      "name": "Data and code from: Parasite-mediated inbreeding depression in wild red deer",
+      "identifier": "10.5061/dryad.vx0k6dk2z",
+      "url": "https://doi.org/10.5061/dryad.vx0k6dk2z",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1038/s41437-025-00801-w"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/edn3.70073",
+      "@type": "ScholarlyArticle",
+      "name": "A framework to unify the relationship between numerical abundance, biomass, and environmental DNA",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.wpzgmsc06",
+      "@type": "Dataset",
+      "name": "A framework to unify the relationship between numerical abundance, biomass, and environmental DNA",
+      "identifier": "10.5061/dryad.wpzgmsc06",
+      "url": "https://doi.org/10.5061/dryad.wpzgmsc06",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Biological sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/edn3.70073"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/eap.70120",
+      "@type": "ScholarlyArticle",
+      "name": "A model for regional-scale oak savanna management: the roles of fire, canopy, and soils for understory plant diversity",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.wpzgmsc28",
+      "@type": "Dataset",
+      "name": "A model for regional-scale oak savanna management: the roles of fire, canopy, and soils for understory plant diversity",
+      "identifier": "10.5061/dryad.wpzgmsc28",
+      "url": "https://doi.org/10.5061/dryad.wpzgmsc28",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Natural sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/eap.70120"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1002/oik.11422",
+      "@type": "ScholarlyArticle",
+      "name": "Reaching reproduction in a large carnivore: Role of early environment and intrinsic traits",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "https://doi.org/10.5061/dryad.xksn02vs8",
+      "@type": "Dataset",
+      "name": "Reaching reproduction in a large carnivore: Role of early environment and intrinsic traits",
+      "identifier": "10.5061/dryad.xksn02vs8",
+      "url": "https://doi.org/10.5061/dryad.xksn02vs8",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "keywords": "Natural sciences",
+      "citation": {
+        "@id": "https://doi.org/10.1002/oik.11422"
+      }
+    },
+    {
+      "@id": ".github/workflows/ci.yml",
+      "@type": "File",
+      "name": "ci.yml",
+      "encodingFormat": "application/yaml",
+      "contentSize": "343"
+    },
+    {
+      "@id": "benchmark/candidate_pool.jsonl",
+      "@type": "File",
+      "name": "candidate_pool.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "1883604"
+    },
+    {
+      "@id": "benchmark/gold_items.jsonl",
+      "@type": "File",
+      "name": "gold_items.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "1791400"
+    },
+    {
+      "@id": "benchmark/item_schema.md",
+      "@type": "File",
+      "name": "item_schema.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "2007"
+    },
+    {
+      "@id": "benchmark/test_pool.jsonl",
+      "@type": "File",
+      "name": "test_pool.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "395418"
+    },
+    {
+      "@id": "benchmark/train_pool.jsonl",
+      "@type": "File",
+      "name": "train_pool.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "1488186"
+    },
+    {
+      "@id": "evaluation/eval_results.csv",
+      "@type": "File",
+      "name": "eval_results.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "41601"
+    },
+    {
+      "@id": "evaluation/gold_eval.jsonl",
+      "@type": "File",
+      "name": "gold_eval.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "573473"
+    },
+    {
+      "@id": "LICENSE",
+      "@type": "File",
+      "name": "LICENSE",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": "1526"
+    },
+    {
+      "@id": "metadata/dryad_manifest.jsonl",
+      "@type": "File",
+      "name": "dryad_manifest.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "17939"
+    },
+    {
+      "@id": "predictions/claude-sonnet-4-5__FS-RAG-Doc.jsonl",
+      "@type": "File",
+      "name": "claude-sonnet-4-5__FS-RAG-Doc.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "114772"
+    },
+    {
+      "@id": "predictions/claude-sonnet-4-5__FS-Random-Doc__s42.jsonl",
+      "@type": "File",
+      "name": "claude-sonnet-4-5__FS-Random-Doc__s42.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "117912"
+    },
+    {
+      "@id": "predictions/claude-sonnet-4-5__ZS-Bare.jsonl",
+      "@type": "File",
+      "name": "claude-sonnet-4-5__ZS-Bare.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "120830"
+    },
+    {
+      "@id": "predictions/claude-sonnet-4-5__ZS-Doc.jsonl",
+      "@type": "File",
+      "name": "claude-sonnet-4-5__ZS-Doc.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "117415"
+    },
+    {
+      "@id": "predictions/gemini-2.5-flash__FS-RAG-Doc.jsonl",
+      "@type": "File",
+      "name": "gemini-2.5-flash__FS-RAG-Doc.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "80852"
+    },
+    {
+      "@id": "predictions/gemini-2.5-flash__FS-Random-Doc__s42.jsonl",
+      "@type": "File",
+      "name": "gemini-2.5-flash__FS-Random-Doc__s42.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "79615"
+    },
+    {
+      "@id": "predictions/gemini-2.5-flash__ZS-Bare.jsonl",
+      "@type": "File",
+      "name": "gemini-2.5-flash__ZS-Bare.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "77153"
+    },
+    {
+      "@id": "predictions/gemini-2.5-flash__ZS-Doc.jsonl",
+      "@type": "File",
+      "name": "gemini-2.5-flash__ZS-Doc.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "80173"
+    },
+    {
+      "@id": "predictions/gpt-4o__FS-RAG-Doc.jsonl",
+      "@type": "File",
+      "name": "gpt-4o__FS-RAG-Doc.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "106596"
+    },
+    {
+      "@id": "predictions/gpt-4o__FS-Random-Doc__s42.jsonl",
+      "@type": "File",
+      "name": "gpt-4o__FS-Random-Doc__s42.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "103535"
+    },
+    {
+      "@id": "predictions/gpt-4o__ZS-Bare.jsonl",
+      "@type": "File",
+      "name": "gpt-4o__ZS-Bare.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "107006"
+    },
+    {
+      "@id": "predictions/gpt-4o__ZS-Doc.jsonl",
+      "@type": "File",
+      "name": "gpt-4o__ZS-Doc.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "108061"
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "README.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "2835"
+    },
+    {
+      "@id": "sql/execution_report.json",
+      "@type": "File",
+      "name": "execution_report.json",
+      "encodingFormat": "application/json",
+      "contentSize": "2432"
+    },
+    {
+      "@id": "sql/gold_answers.jsonl",
+      "@type": "File",
+      "name": "gold_answers.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "316811"
+    },
+    {
+      "@id": "sql/gold_sql.jsonl",
+      "@type": "File",
+      "name": "gold_sql.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "403048"
+    },
+    {
+      "@id": "sql/schema_field_flags.csv",
+      "@type": "File",
+      "name": "schema_field_flags.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "372180"
+    },
+    {
+      "@id": "sql/schema_metadata.jsonl",
+      "@type": "File",
+      "name": "schema_metadata.jsonl",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "1144540"
+    },
+    {
+      "@id": "tests/test_bundle_integrity.py",
+      "@type": "File",
+      "name": "test_bundle_integrity.py",
+      "encodingFormat": "text/x-python",
+      "contentSize": "7033"
+    }
+  ]
+}
